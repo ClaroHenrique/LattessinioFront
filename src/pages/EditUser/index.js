@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useLocation, useHistory } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import { FiTrash, FiPlus, FiArrowLeft } from 'react-icons/fi'
 import api from '../../services/api';
 import "./styles.css";

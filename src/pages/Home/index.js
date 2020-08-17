@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link, useHistory } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import { FiPlus } from 'react-icons/fi'
 import api from '../../services/api';
 
@@ -13,7 +13,7 @@ export default function Home() {
     var [usersData, setUsersData] = useState([]);
 
     async function fetchUsers() {
-        const response = await api.get(`users?userName=${userName}&actityName=${activityName}`);
+        const response = await api.get(`users?userName=${userName}&activityName=${activityName}`);
         setUsersData(response.data);
     }
 

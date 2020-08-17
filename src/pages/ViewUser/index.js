@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { Link, useHistory } from 'react-router-dom';
-import { FiEdit, FiTrash, FiSkipBack, FiArrowLeft } from 'react-icons/fi'
+import { useHistory } from 'react-router-dom';
+import { FiEdit, FiTrash, FiArrowLeft } from 'react-icons/fi'
 import api from '../../services/api';
 
 import "./styles.css";
