@@ -1,0 +1,6 @@
+2020.08.15 17:05:12 INFO  started: Metals version 0.9.2 in workspace '/home/claro_henrique/Documentos/UFC/react/cpp/frontend/frontend' for client vscode.
+2020.08.15 17:05:23 INFO  time: initialize in 11s
+2020.08.15 17:05:34 WARN  no build tool detected in workspace '/home/claro_henrique/Documentos/UFC/react/cpp/frontend/frontend'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.08.16 15:08:43 INFO  started: Metals version 0.9.2 in workspace '/home/claro_henrique/Documentos/UFC/react/cpp/frontend/frontend' for client vscode.
+2020.08.16 15:08:52 INFO  time: initialize in 10s
+2020.08.16 15:09:12 WARN  no build tool detected in workspace '/home/claro_henrique/Documentos/UFC/react/cpp/frontend/frontend'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 

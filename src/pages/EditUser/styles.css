@@ -1,0 +1,70 @@
+.edit-user-container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+}
+
+.edit-user-container .content{
+    width: 100%;
+    height: 100%;
+    padding: 96px;
+    background: #f0f0f5;
+    box-shadow: 0 0 100px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    
+    justify-content: space-between;
+    justify-items: center;
+}
+
+.view-user-container .content .menu{
+    display: flex;
+    justify-content: right;
+    align-items: right;
+}
+
+.view-user-container .content .menu button{
+    margin-left: 8px;
+}
+
+.edit-user-container .title {
+    color: #142850;
+    margin-top: 64px;
+    margin-bottom: 24px;
+    font-size: 24px;
+    margin-bottom: 32px;
+}
+
+.edit-user-container section.form h1 {
+    font-size: 32px;
+    margin-bottom: 32px;
+}
+
+.edit-user-container .content form {
+    width: 100%;
+    color: rgb(60, 60, 80);
+}
+
+.edit-user-container .content form input {
+    margin-top: 4px;
+    margin-bottom: 16px;
+    width: 100%;
+}
+
+.edit-user-container .content ul {
+    display: inline;
+    list-style: none;
+}
+
+.edit-user-container .content ul li{
+    background: #FFF;
+    padding: 24px;
+    position: relative;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+
+

@@ -1,0 +1,68 @@
+.register-user-container {
+    width: 100%;
+    max-width: 1100px;
+    height: 100vh;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+}
+
+.register-user-container .content{
+    width: 100%;
+    padding: 96px;
+    background: #f0f0f5;
+    box-shadow: 0 0 100px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+}
+
+.register-user-container .content section{
+    width: 100%;
+    max-width: 400px;
+}
+
+.register-user-container .content section h1 {
+    margin: 64px 0 32px;
+    font-size: 32px;
+}
+
+.register-user-container .content section p {
+    font-size: 18px;
+    color: rgb(100, 100, 120);
+}
+
+.register-user-container .content form {
+    width: 100%;
+    max-width: 480px;
+    color: rgb(60, 60, 80);
+}
+
+.register-user-container .content form input {
+    margin-top: 4px;
+    margin-bottom: 16px;
+    width: 100%;
+}
+
+.register-user-container .content form .description-input {
+    width: 300px;
+    margin-top: 4px;
+    margin-bottom: 16px;
+    width: 100%;
+}
+
+.view-user-container .title {
+    color: #142850;
+    margin-top: 64px;
+    margin-bottom: 24px;
+    font-size: 24px;
+    margin-bottom: 32px;
+}
+
+.view-user-container .attribute {
+    display: flex;
+    margin-bottom: 16px;
+}
