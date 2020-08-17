@@ -56,7 +56,7 @@ export default function Home() {
                     <form onSubmit={handleSearch}>
                         <h1>Opções de Pesquisa</h1>
                         <div>
-                            nome do usuario:
+                            Nome do usuario:
                             <input
                                 placeholder="Nome do usuário"
                                 value={userName}
@@ -65,7 +65,7 @@ export default function Home() {
                         </div>
 
                         <div>
-                            nome da atividade:
+                            Nome da atividade:
                             <input
                                 placeholder="Nome da atividade"
                                 value={activityName}
@@ -79,7 +79,7 @@ export default function Home() {
                 </div>
 
                 <ul>
-                    {usersData.map(renderUser)}
+                    {usersData.sort((a, b) => a.name < b.name ? -1 : 1).map(renderUser)}
                 </ul>
                 <div className="menu">
                     <button onClick={() => handleRegisterUser()} type='button' title="Criar">

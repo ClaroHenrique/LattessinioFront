@@ -31,14 +31,27 @@
     max-width: 400px;
 }
 
-.register-user-container .content section h1 {
-    margin: 64px 0 32px;
-    font-size: 32px;
+.register-user-container .menu button{
+    margin-right: 8px;
+    background-color: rgb(240, 240, 255);
+    border: 2px solid rgb(158, 158, 172);
+    border-radius: 16px;
+    padding: 10px;
+    transition-duration: 0.4s;
 }
 
-.register-user-container .content section p {
-    font-size: 18px;
-    color: rgb(100, 100, 120);
+.register-user-container .menu button:hover{
+    background-color: rgb(205, 205, 255);
+}
+
+.register-user-container .content h1 {
+    width: 100%;
+    
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+    
+    color: rgb(20, 40, 80);
 }
 
 .register-user-container .content .advice {

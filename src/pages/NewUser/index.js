@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useHistory } from 'react-router-dom';
+import { FaArrowLeft } from 'react-icons/fa'
 import api from '../../services/api';
 import "./styles.css";
 
@@ -38,12 +39,22 @@ export default function NewUser() {
         }
     }
 
+    async function handleGoBack() {
+        history.push('/');
+    }
+
     return (
         <div className="register-user-container">
             <div className="content">
+
+                <div className="menu">
+                    <button onClick={() => handleGoBack()} type='button' title="Retornar">
+                        <FaArrowLeft size={32} />
+                    </button>
+                </div>
+
                 <div>
                     <h1>Cadastro de Usuário</h1>
-                    <p>Cadastre um usuário, entre na plataforma.</p>
                 </div>
 
                 <form onSubmit={handleRegister}>
