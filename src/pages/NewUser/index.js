@@ -24,7 +24,6 @@ export default function NewUser() {
             description,
         };
 
-        console.log('Create User: ', data);
         try {
             await api.post('users', data);
             alert('Cadastro realizado com sucesso.');

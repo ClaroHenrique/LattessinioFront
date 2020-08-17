@@ -4,21 +4,6 @@ import { FiTrash, FiPlus, FiArrowLeft } from 'react-icons/fi'
 import api from '../../services/api';
 import "./styles.css";
 
-const ACTIVITIES_EXAMPLE = [
-    { id: 13, userId: 1, name: 'Javaskrito', description: 'basico do kakasrcrito', category: 'curso' },
-    { id: 14, userId: 1, name: 'Python', description: 'basico do pai ton', category: 'curso' },
-    { id: 15, userId: 1, name: 'Teddy Ed', description: 'ensinei muito la kkj', category: 'palestra' },
-]
-const USERS_EXAMPLE = {
-    id: 1,
-    name: 'Mario da Silva',
-    email: 'mama@r.com',
-    tel: '93420948203',
-    description: 'Professora assistente da Universidade Federal do Ceará no Campus de Quixadá. Iniciou seu doutorado na Universidade Federal do Ceará em março de 2016. Em 2018 foi estudante de doutorado sanduíche na Univeristé de Versailles Saint-Quentin, em Versalhes, França Sua proposta de tese é sobre predição de trajetórias.',
-    address: 'rua da esquina ',
-    activities: ACTIVITIES_EXAMPLE,
-}
-
 export default function EditUser({ match }) {
 
     const history = useHistory();
@@ -36,8 +21,6 @@ export default function EditUser({ match }) {
         const response = await api.get(`users/${userId}`);
         const user = response.data;
 
-        console.log(response);
-
         setName(user.name);
         setAddress(user.address);
         setEmail(user.email);
@@ -49,7 +32,6 @@ export default function EditUser({ match }) {
     useEffect(() => {
         fetchUser();
     }, []);
-    //console.log('Update User: ', { name, address, email, tel, description, activities });
 
     async function handleGoBack() {
         history.push(`/users/view/${userId}`);
@@ -67,13 +49,12 @@ export default function EditUser({ match }) {
             description,
             activities,
         };
-        console.log('Update User: ', data);
+
         try {
             await api.put(`users/${userId}`, data);
             alert('Usuário atualizado com sucesso.');
             history.push(`/users/view/${userId}`);
         } catch (err) {
-            console.log(err);
             alert('Erro ao editar. Tente novamente.');
         }
     }
@@ -130,14 +111,11 @@ export default function EditUser({ match }) {
     }
 
     function handleDeleteActivity(id) {
-        console.log(activities);
         setActivities(activities.filter(activity => activity.id != id));
-        console.log(activities);
     }
 
     function renderEditActivity(activity, index) {
 
-        console.log(tel);
         return (
             <li id={activity.id}>
                 Nome da atividade:

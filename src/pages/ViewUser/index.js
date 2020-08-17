@@ -12,7 +12,6 @@ export default function ViewUser({ match }) {
 
     const history = useHistory();
     const userId = match.params.id;
-    console.log(userId);
     var [userData, setUserData] = useState([]);
 
     async function fetchUser() {

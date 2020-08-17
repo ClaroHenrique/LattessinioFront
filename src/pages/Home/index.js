@@ -5,17 +5,6 @@ import api from '../../services/api';
 
 import "./styles.css";
 
-var USERS_EXAMPLE = [
-    { id: 1, name: 'Maria da Silva', email: 'mama@r.com', description: 'mestre' },
-    { id: 2, name: 'Joao Ferreira', email: 'joao@g.com', description: 'graduando' },
-    { id: 3, name: 'Jotaro Kujo', email: 'jojo@b.com', description: 'doutor' },
-    { id: 4, name: 'Maria da Silva', email: 'mama@r.com', description: 'mestre' },
-    { id: 5, name: 'Caroço Maroto', email: 'coco@g.com', description: 'graduando' },
-]
-var USERS_EXAMPLE2 = [
-    { id: 1, name: 'Mario da Silva', email: 'mama@r.com', description: 'mestre' },
-]
-
 export default function Home() {
 
     const history = useHistory();
@@ -24,9 +13,7 @@ export default function Home() {
     var [usersData, setUsersData] = useState([]);
 
     async function fetchUsers() {
-        console.log(`users?userName=${userName}&activityName=${activityName}`);
         const response = await api.get(`users?userName=${userName}&actityName=${activityName}`);
-        console.log(response.data);
         setUsersData(response.data);
     }
 
