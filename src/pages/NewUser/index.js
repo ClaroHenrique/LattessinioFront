@@ -16,6 +16,11 @@ export default function NewUser() {
     async function handleRegister(e) {
         e.preventDefault();
 
+        if (!name || !email) {
+            alert('Os campos obrigatórios não foram preenchidos.');
+            return;
+        }
+
         const data = {
             name,
             address,
@@ -42,39 +47,39 @@ export default function NewUser() {
                 </div>
 
                 <form onSubmit={handleRegister}>
-                    Nome:
+                    Nome <span className="advice">*</span>
                     <input
                         placeholder="Nome do usuário"
                         value={name}
                         onChange={e => setName(e.target.value)}
                     />
-                    E-mail:
+                    E-mail <span className="advice">*</span>
                     <input
                         type="email"
                         placeholder="Endereço de e-mail"
                         value={email}
                         onChange={e => setEmail(e.target.value)}
                     />
-                    Endereço:
+                    Endereço
                     <input
-                        placeholder="Endereço do usuário AAAAA"
+                        placeholder="Endereço do usuário"
                         value={address}
                         onChange={e => setAddress(e.target.value)}
                     />
-                    Telefone:
+                    Telefone
                     <input
                         placeholder="Telefone do usuário"
                         value={tel}
                         onChange={e => setTel(e.target.value)}
                     />
-                    Resumo:
+                    Resumo
                     <input className="register-input"
                         type="text"
                         placeholder="Resumo sobre o usuário"
                         value={description}
                         onChange={e => setDescription(e.target.value)}
                     />
-
+                    <span className="advice">* Campos obrigatórios.</span>
                     <button className="button" type="submit">Cadastrar</button>
                 </form>
             </div>

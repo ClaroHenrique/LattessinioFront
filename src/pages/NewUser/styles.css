@@ -40,6 +40,12 @@
     color: rgb(100, 100, 120);
 }
 
+.register-user-container .content .advice {
+    color: rgb(200, 30, 30);
+    color: rgb(200, 92, 30);
+    font-size: 12px;
+}
+
 .register-user-container .content form {
     width: 100%;
     max-width: 480px;

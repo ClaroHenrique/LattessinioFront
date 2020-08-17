@@ -110,8 +110,8 @@ export default function EditUser({ match }) {
         setActivities(activities.concat(newActivity));
     }
 
-    function handleDeleteActivity(id) {
-        setActivities(activities.filter(activity => activity.id != id));
+    function handleDeleteActivity(index) {
+        setActivities(activities.filter((_, i) => i != index));
     }
 
     function renderEditActivity(activity, index) {
@@ -140,7 +140,7 @@ export default function EditUser({ match }) {
                     }}
                 />
 
-                <button onClick={() => handleDeleteActivity(activity.id)} type='button' title="Deletar">
+                <button onClick={() => handleDeleteActivity(index)} type='button' title="Deletar">
                     <FiTrash size={16} />
                 </button>
             </li>
