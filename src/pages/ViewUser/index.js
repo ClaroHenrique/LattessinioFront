@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useHistory } from 'react-router-dom';
-import { FiEdit, FiTrash, FiArrowLeft } from 'react-icons/fi'
+import { FaEdit, FaTrash, FaArrowLeft } from 'react-icons/fa'
 import api from '../../services/api';
 
 import "./styles.css";
@@ -103,13 +103,13 @@ export default function ViewUser({ match }) {
     function renderMenu(userId) {
         return (<div className="menu">
             <button onClick={() => handleGoBack()} type='button' title="Retornar">
-                <FiArrowLeft size={32} />
+                <FaArrowLeft size={32} />
             </button>
             <button onClick={() => handleEditUser(userId)} type='button' title="Editar">
-                <FiEdit size={32} />
+                <FaEdit size={32} />
             </button>
             <button onClick={() => handleDeleteUser(userId)} type='button' title="Deletar">
-                <FiTrash size={32} />
+                <FaTrash size={32} style={{ fill: 'rgb(175, 82, 82)' }} />
             </button>
         </div>);
     }

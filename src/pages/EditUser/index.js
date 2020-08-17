@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useHistory } from 'react-router-dom';
-import { FiTrash, FiPlus, FiArrowLeft } from 'react-icons/fi'
+import { FaTrash, FaPlus, FaArrowLeft } from 'react-icons/fa'
 import api from '../../services/api';
 import "./styles.css";
 
@@ -141,7 +141,7 @@ export default function EditUser({ match }) {
                 />
 
                 <button onClick={() => handleDeleteActivity(index)} type='button' title="Deletar">
-                    <FiTrash size={16} />
+                    <FaTrash size={16} />
                 </button>
             </li>
         )
@@ -155,9 +155,11 @@ export default function EditUser({ match }) {
                     <ul>
                         {activities.map(renderEditActivity)}
                     </ul>
-                    <button onClick={() => handleCreateActivity()} type='button' title="Criar">
-                        <FiPlus size={32} />
-                    </button>
+                    <div className="menu">
+                        <button onClick={() => handleCreateActivity()} type='button' title="Criar">
+                            <FaPlus size={24} />
+                        </button>
+                    </div>
                 </div>
             )
         } else {
@@ -170,7 +172,7 @@ export default function EditUser({ match }) {
             <div className="content">
                 <div className="menu">
                     <button onClick={() => handleGoBack()} type='button' title="Retornar">
-                        <FiArrowLeft size={32} />
+                        <FaArrowLeft size={32} />
                     </button>
                 </div>
 

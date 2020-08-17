@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useHistory } from 'react-router-dom';
-import { FiPlus } from 'react-icons/fi'
+import { FaPlus } from 'react-icons/fa'
 import api from '../../services/api';
 import "./styles.css";
 
@@ -49,7 +49,7 @@ export default function Home() {
 
     return (
         <div className="home-container">
-            <div className="users-search">
+            <div className="content">
                 <img src={logoImg} alt="lattessinio" />
                 <div>
 
@@ -81,9 +81,11 @@ export default function Home() {
                 <ul>
                     {usersData.map(renderUser)}
                 </ul>
-                <button onClick={() => handleRegisterUser()} type='button' title="Criar">
-                    <FiPlus size={16} />
-                </button>
+                <div className="menu">
+                    <button onClick={() => handleRegisterUser()} type='button' title="Criar">
+                        <FaPlus size={24} />
+                    </button>
+                </div>
 
             </div>
         </div>

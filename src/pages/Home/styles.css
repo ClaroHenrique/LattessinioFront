@@ -7,7 +7,7 @@
     justify-content: center;
 }
 
-.home-container .users-search {
+.home-container .content {
     padding: 96px;
     margin-bottom: 30px;
     background: #f0f0f5;
@@ -19,12 +19,12 @@
 }
 
 @media only screen and (max-width: 800px) {
-    .home-container .users-search{
+    .home-container .content{
         padding: 20px;
     }
 }
 
-.home-container .users-search img{
+.home-container .content img{
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -34,7 +34,7 @@
 }
 
 
-.home-container .users-search form {
+.home-container .content form {
     width: 100%;
     padding: 12px;
     margin-top: 5px;
@@ -46,12 +46,12 @@
 }
 
 @media only screen and (max-width: 800px) {
-    .home-container .users-search form{
+    .home-container .content form{
         flex-direction: column;
     }
 }
 
-.home-container .users-search form div{
+.home-container .content form div{
     justify-items: center;
     align-items: center;
     padding: 24px 0 24px 12px;
@@ -59,11 +59,29 @@
     width: 70%;
 }
 
-.home-container .users-search form button{
+.home-container .content .menu{
+    text-align: right;
+    padding-top: 12px;
+}
+
+.home-container .content .menu button{
+    margin-right: 8px;
+    background-color: rgb(240, 240, 255);
+    border: 2px solid rgb(158, 158, 172);
+    border-radius: 16px;
+    padding: 10px;
+    transition-duration: 0.4s;
+}
+
+.home-container .content .menu button:hover{
+    background-color: rgb(205, 205, 255);
+}
+
+.home-container .content form button{
     margin: 0;
 }
 
-.home-container  .users-search form input{
+.home-container  .content form input{
     width: 70%;
     border-radius: 5px;
     height: 40px;
@@ -75,12 +93,12 @@
     margin-bottom: 32px;
 }
 
-.home-container .users-search ul {
+.home-container .content ul {
     display: inline;
     list-style: none;
 }
 
-.home-container .users-search ul li{
+.home-container .content ul li{
     cursor: pointer;
     background: #FFF;
     padding: 24px;
@@ -89,22 +107,22 @@
     opacity: .8;
 }
 
-.home-container .users-search ul li:hover{
+.home-container .content ul li:hover{
     margin-left: 6px;
     opacity: 1;
 }
 
-.home-container .users-search .user-name {
+.home-container .content .user-name {
     font-size: 18px;
     color: rgb(20, 40, 83);
 }
 
-.home-container .users-search .user-email {
+.home-container .content .user-email {
     font-size: 10px;
     color: rgb(94, 108, 138);
 }
 
-.home-container .users-search .user-description {
+.home-container .content .user-description {
     margin-top: 5px;
     font-size: 10px;
     color: rgb(12, 12, 12);

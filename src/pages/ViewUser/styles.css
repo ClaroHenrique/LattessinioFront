@@ -18,16 +18,10 @@
     justify-items: center;
 }
 
-.register-user-container .content{
-    width: 100%;
-    padding: 96px;
-    background: #f0f0f5;
-    box-shadow: 0 0 100px rgba(0,0,0,0.1);
-    border-radius: 8px;
-    
-    display: flex;
-    justify-content: space-between;
-    justify-items: center;
+@media only screen and (max-width: 800px) {
+    .view-user-container .content{
+        padding: 20px;
+    }
 }
 
 .view-user-container .title {
@@ -49,14 +43,21 @@
 }
 
 .view-user-container .content .menu{
-    display: flex;
-    align-items: left;
-    text-align: left;
-    align-content: left;
+    padding-bottom: 24px;
+    text-align: right;
 }
 
 .view-user-container .content .menu button{
     margin-right: 8px;
+    background-color: rgb(240, 240, 255);
+    border: 2px solid rgb(158, 158, 172);
+    border-radius: 16px;
+    padding: 10px;
+    transition-duration: 0.4s;
+}
+
+.view-user-container .content .menu button:hover{
+    background-color: rgb(205, 205, 255);
 }
 
 .view-user-container .content .user-name {

@@ -21,7 +21,6 @@
 
 @media only screen and (max-width: 800px) {
     .register-user-container .content{
-
         padding: 20px;
         flex-direction: column;
     }

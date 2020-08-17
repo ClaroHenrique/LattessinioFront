@@ -22,20 +22,33 @@
 }
 
 @media only screen and (max-width: 800px) {
-    .register-user-container .content{
+    .edit-user-container .content{
         padding: 20px;
     }
 }
 
-.view-user-container .content .menu{
-    display: flex;
-    justify-content: right;
-    align-items: right;
+.edit-user-container .content .menu{
+    text-align: right;
+    padding-bottom: 12px;
+}
+
+.edit-user-container .content .menu button{
+    margin-right: 8px;
+    background-color: rgb(240, 240, 255);
+    border: 2px solid rgb(158, 158, 172);
+    border-radius: 16px;
+    padding: 10px;
+    transition-duration: 0.4s;
+}
+
+.edit-user-container .content .menu button:hover{
+    background-color: rgb(205, 205, 255);
 }
 
 .view-user-container .content .menu button{
     margin-left: 8px;
 }
+
 
 .edit-user-container .title {
     color: #142850;
