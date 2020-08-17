@@ -66,7 +66,7 @@ export default function Home() {
 
                         <div>
                             nome da atividade:
-                        <input
+                            <input
                                 placeholder="Nome da atividade"
                                 value={activityName}
                                 onChange={e => setActivityName(e.target.value)}

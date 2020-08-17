@@ -21,6 +21,12 @@
     justify-items: center;
 }
 
+@media only screen and (max-width: 800px) {
+    .register-user-container .content{
+        padding: 20px;
+    }
+}
+
 .view-user-container .content .menu{
     display: flex;
     justify-content: right;

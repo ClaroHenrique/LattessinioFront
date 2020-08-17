@@ -9,6 +9,7 @@
 
 .home-container .users-search {
     padding: 96px;
+    margin-bottom: 30px;
     background: #f0f0f5;
     box-shadow: 0 0 100px rgba(0,0,0,0.1);
     
@@ -17,13 +18,21 @@
     justify-items: center;
 }
 
+@media only screen and (max-width: 800px) {
+    .home-container .users-search{
+        padding: 20px;
+    }
+}
+
 .home-container .users-search img{
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
-    width: 50%;
+    width: 100%;
+    max-width: 400px;
 }
+
 
 .home-container .users-search form {
     width: 100%;
@@ -56,6 +65,9 @@
 
 .home-container  .users-search form input{
     width: 70%;
+    border-radius: 5px;
+    height: 40px;
+    padding: 5px;
 }
 
 .home-container section.form h1 {
@@ -74,10 +86,12 @@
     padding: 24px;
     position: relative;
     margin-top: 10px;
+    opacity: .8;
 }
 
 .home-container .users-search ul li:hover{
-    margin-left: 10px;
+    margin-left: 6px;
+    opacity: 1;
 }
 
 .home-container .users-search .user-name {
