@@ -36,10 +36,10 @@ export default function NewUser() {
     return (
         <div className="register-user-container">
             <div className="content">
-                <section>
+                <div>
                     <h1>Cadastro de Usuário</h1>
                     <p>Cadastre um usuário, entre na plataforma.</p>
-                </section>
+                </div>
 
                 <form onSubmit={handleRegister}>
                     Nome:
@@ -57,7 +57,7 @@ export default function NewUser() {
                     />
                     Endereço:
                     <input
-                        placeholder="Endereço do usuário"
+                        placeholder="Endereço do usuário AAAAA"
                         value={address}
                         onChange={e => setAddress(e.target.value)}
                     />

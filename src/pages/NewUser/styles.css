@@ -16,8 +16,16 @@
     border-radius: 8px;
     
     display: flex;
+    
+
     justify-content: space-between;
     justify-items: center;
+}
+
+@media only screen and (max-width: 800px) {
+    .register-user-container .content{
+        flex-direction: column;
+    }
 }
 
 .register-user-container .content section{

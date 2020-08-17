@@ -2,8 +2,9 @@ import React, { useState, useEffect } from "react";
 import { useHistory } from 'react-router-dom';
 import { FiPlus } from 'react-icons/fi'
 import api from '../../services/api';
-
 import "./styles.css";
+
+import logoImg from '../../assets/logo.png'
 
 export default function Home() {
 
@@ -42,7 +43,6 @@ export default function Home() {
         fetchUsers()
     }
 
-
     async function handleRegisterUser() {
         history.push('users/register/')
     }
@@ -50,11 +50,11 @@ export default function Home() {
     return (
         <div className="home-container">
             <div className="users-search">
-                <h1>Usuários Cadastrados</h1>
-
+                <img src={logoImg} alt="lattessinio" />
                 <div>
-                    Opções para Pesquisa
+
                     <form onSubmit={handleSearch}>
+                        <h1>Opções de Pesquisa</h1>
                         <div>
                             nome do usuario:
                             <input
