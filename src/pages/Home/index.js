@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, useHistory } from 'react-router-dom';
-import { FiEdit, FiTrash, FiEye } from 'react-icons/fi'
+import { FiPlus } from 'react-icons/fi'
 import api from '../../services/api';
 
 import "./styles.css";
@@ -55,6 +55,11 @@ export default function Home() {
         fetchUsers()
     }
 
+
+    async function handleRegisterUser() {
+        history.push('users/register/')
+    }
+
     return (
         <div className="home-container">
             <div className="users-search">
@@ -89,6 +94,9 @@ export default function Home() {
                 <ul>
                     {usersData.map(renderUser)}
                 </ul>
+                <button onClick={() => handleRegisterUser()} type='button' title="Criar">
+                    <FiPlus size={16} />
+                </button>
 
             </div>
         </div>

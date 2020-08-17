@@ -54,26 +54,26 @@ export default function NewUser() {
                         type="email"
                         placeholder="Endereço de e-mail"
                         value={email}
-                        onChange={e => setEmail(e.target.email)}
+                        onChange={e => setEmail(e.target.value)}
                     />
                     Endereço:
                     <input
                         placeholder="Endereço do usuário"
                         value={address}
-                        onChange={e => setAddress(e.target.address)}
+                        onChange={e => setAddress(e.target.value)}
                     />
                     Telefone:
                     <input
                         placeholder="Telefone do usuário"
                         value={tel}
-                        onChange={e => setTel(e.target.tel)}
+                        onChange={e => setTel(e.target.value)}
                     />
                     Resumo:
                     <input className="register-input"
                         type="text"
                         placeholder="Resumo sobre o usuário"
                         value={description}
-                        onChange={e => setDescription(e.target.description)}
+                        onChange={e => setDescription(e.target.value)}
                     />
 
                     <button className="button" type="submit">Cadastrar</button>
