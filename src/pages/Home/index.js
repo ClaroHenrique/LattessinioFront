@@ -24,7 +24,7 @@ export default function Home() {
     var [usersData, setUsersData] = useState([]);
 
     async function fetchUsers() {
-        console.log(`users?userName=${userName}&actityName=${activityName}`);
+        console.log(`users?userName=${userName}&activityName=${activityName}`);
         const response = await api.get(`users?userName=${userName}&actityName=${activityName}`);
         console.log(response.data);
         setUsersData(response.data);
